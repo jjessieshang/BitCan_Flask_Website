@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPPING Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Home/IndexStyle.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">BitCan</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/mapping" class="navbar__links">Mapping</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/topography" class="navbar__links">Topography</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/login" class="button">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                    <h1>GEOGRAPHICAL DATA MADE EASY</h1>
+                    <!-- <h2></h2> -->
+                    <p>at BitCan Geosciences & Engineering.</p>
+                    <button class="main__btn"><a href="#tools">Get Started</a></button>
+            </div>
+
+            <div class="main__img--container">
+                <!-- <img src="images/pic1.svg" alt="pic" id="main__img"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h1 id="tools" class="services__anchor">We've got you covered</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Mapping</h2>
+                <p>Coordinate conversion and distance calculator</p>
+                <button><a href="/mapping">GO</a></button>
+            </div>
+            <div class="services__card">
+                <h2>Topography</h2>
+                <p>Mechanical properties of well sites</p>
+                <button><a href="/topography">GO</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>BitCan </h2>
+                    <a href="/">bitcange.com</a>
+                    <p>email</p>
+                    <p>phone</p>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Jessie Shang</h2>
+                    <a href="/">website</a>
+                    <p>jshang@bitcange.com</p>
+                    <p>587-703-3169</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='JS/app.js') }}"></script>
+</body>
+</html>
