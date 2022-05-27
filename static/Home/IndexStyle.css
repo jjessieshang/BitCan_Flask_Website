@@ -114,6 +114,7 @@ html {
         width: 100%;
         max-width: 1300px;
         padding: 0;
+
     }
 
     .navbar__menu {
@@ -208,23 +209,26 @@ html {
 }
 
 .main__container {
-    display: grid;
-    grid-template-columns: 800px 60px;
     align-items: center;
-    justify-self: center;
-    margin: 0 auto;
+    justify-content: center;
+    display: flex;
     height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../Images/pic6.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../Images/pic6.jpg");
     z-index: 1;
-    /* width: 100%; */
     background-size: cover;
     height: 720px;
-    /* max-width: 1500px; */
-    padding: 0 110px;
+    padding: 0 100px;
+}
+
+.main__content {
+    text-align: center;
+    max-width: 900px;
+    align-items: center;
+    justify-self: center;
 }
 
 .main__content h1 {
-    font-size: 5.2rem;
+    font-size: 4rem;
     background-color: #659dbd;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     background-size: 100%;
@@ -233,6 +237,7 @@ html {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: 400;
+    
 }
 
 .main__content h2 {
@@ -248,10 +253,11 @@ html {
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #e9e9e9;
     font-weight: 100;
+
 }
 
 .main__btn {
@@ -506,11 +512,13 @@ html {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    font-size: small;
 }
 
 .footer__link--items p {
     color: #fff;
     margin-bottom: 0.5rem;
+    font-size: small;
 }
 
 .footer__link--items a:hover {

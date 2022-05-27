@@ -186,26 +186,36 @@ def mapping():
 
     #FOLIUM MAP
     m = folium.Map(location=[55,-115], tiles =None,
-                    zoom_start=6)
+                    zoom_start=5)
 
     borderStyle={
         'fillOpacity': 0.1,
         'weight': 1,
         'color': 'black'
     }
-    #Injecting html for back button
-    m.get_root().html.add_child(folium.Element("""
-    <div style= "position: fixed;
-    top: 25px;
-    left:70px;
-    width: 70px;
-    height: 20px;
-    border: none;
-    z-index: 900;">
-        <button class="back__button">Go Back</button>
-    </div>
-    """))
-    m.save("output.html")
+    # #Injecting html for back button
+    # m.get_root().html.add_child(folium.Element("""
+    #         <button style="width: 45px;
+    #         height: 45px;
+    #         position: fixed;
+    #         z-index: 900;
+    #         outline: none;
+    #         background-color: #acadb2;
+    #         outline: none;
+    #         top: 20px;
+    #         border: none;
+    #         left: 50px;
+    #         border-radius: 50%;
+    #         font-size: xx-large;
+    #         cursor: pointer;"><a href="/form" style="text-decoration: none;
+    #                 color: #f8f8f9;
+    #                 position: fixed;
+    #                 top: 17px;
+    #                 left: 62px;">
+    #         <
+    #         </a></button>
+    # """))
+    # m.save("output.html")
 
     folium.GeoJson("alberta.geojson", 
                     name="Alberta",
