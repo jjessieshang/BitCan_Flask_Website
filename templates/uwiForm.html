@@ -39,11 +39,11 @@
     <div class ="form">
         <div class ="form__container">
             <div class="form__title">Alberta Well Locator</div>
-            <form action="mapping">
+            <form action="mapping" method="GET">
                 <div class="form__details">
                     <div class="form__select-box">
-                        <select class="select" name="lsd" id="lsd" required>
-                            <option disabled selected>Legal Subdivision</option>
+                        <select required class="select" name="lsd" id="lsd">
+                            <option value="">Legal Subdivision</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="form__select-box">
                         <select class="select" name="sc" id="sc" required>
-                            <option disabled selected>Section</option>
+                            <option value="">Section</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="form__select-box">
                         <select class="select" name="twp" id="twp" required>
-                            <option disabled selected>Township</option>
+                            <option value="">Township</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -236,7 +236,7 @@
                     </div>
                     <div class="form__select-box">
                         <select class="select" name="rg" id="rg" required>
-                            <option disabled selected>Range</option>
+                            <option value="">Range</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -271,7 +271,7 @@
                     </div>
                     <div class="form__select-box">
                         <select class="select" name="md" id="md" required>
-                            <option disabled selected>Meridian</option>
+                            <option value="">Meridian</option>
                             <option>4</option>
                             <option>5</option>
                             <option>6</option>

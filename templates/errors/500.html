@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCan Well Locator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Home/IndexStyle.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">BitCan</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/form" class="navbar__links">Locator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="error-content">
+        <h1>Oops! The unique well identification you numbered is not valid (500)</h1>
+        <p>Please try again or visit below for more information:</p>
+        <a href="https://chinookpetroleum.com/alberta-township-system/#:~:text=Township%20lines%20are%20numbered%20from,(approximately%2020%20meters)%20each.">Alberta Township System</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>BitCan </h2>
+                    <a href="https://www.bitcange.com/">bitcange.com</a>
+                    <p>bitcangl@bitcange.com</p>
+                    <p>403-235-5520</p>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Jessie Shang</h2>
+                    <a href="/">website</a>
+                    <p>jshang@bitcange.com</p>
+                    <p>587-703-3169</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='JS/app.js') }}"></script>
+</body>
+</html>
